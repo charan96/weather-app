@@ -6,7 +6,7 @@ class URLConstructor:
 		self.apikey = apikey
 		self.country_code = "us" if country_code is None else country_code
 
-		self.base_url = "api.openweathermap.org/data/2.5/weather?"
+		self.base_url = "http://api.openweathermap.org/data/2.5/weather?zip="
 
 	@staticmethod
 	def is_valid_zipcode(zipcode):

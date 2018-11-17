@@ -10,5 +10,8 @@ from weather_app import WeatherApp
 def main(zipcode):
 	config = Config("../config.json")
 
-	weather_app = WeatherApp()
+	weather_app = WeatherApp(config)
 	print(weather_app.get_weather(zipcode))
+
+if __name__ == "__main__":
+    main()

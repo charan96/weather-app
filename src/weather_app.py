@@ -3,7 +3,6 @@ import json
 import requests
 import tabulate
 from collections import OrderedDict
-
 from .url_constructor import URLConstructor
 
 

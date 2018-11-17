@@ -1,5 +1,4 @@
 import click
-
 from src.config import Config
 from src.url_constructor import URLConstructor
 from src.weather_app import WeatherApp

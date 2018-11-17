@@ -1,6 +1,5 @@
 import re
 
-
 class URLConstructor:
 	def __init__(self, apikey, country_code=None):
 		self.apikey = apikey

@@ -10,10 +10,11 @@ I have a config.json file (not included) located in the repo that contains a `ap
 
 The output looks like this:
 
-| -----------|--------
-| Location   |New York
-| Condition  | Clear
-| Temperature|38.2 F
-| Wind       |9.2 mph
-| Humidity   |72%
-| Cloudiness |1%
+| | |
+| ----------- | --------
+| Location    | New York
+| Condition   | Clear
+| Temperature | 38.2 F
+| Wind        | 9.2 mph
+| Humidity    | 72%
+| Cloudiness  | 1%

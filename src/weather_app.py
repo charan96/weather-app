@@ -1,3 +1,4 @@
+import sys
 import json
 import requests
 import tabulate
@@ -18,16 +19,19 @@ class WeatherApp:
 		response = requests.get(self.urlc.generate_url(zipcode))
 		
 		if response.status_code == 404:
-			raise ValueError('invalid zip code')
+			print('invalid zip code')
+			sys.exit()
 
 		json_response = response.json()
 		
 		if json_response['cod'] == 200:
 			return json_response
 		elif json_response['cod'] == 429:
-			raise RuntimeError('exceded API request limit; {}'.format(json_response))
+			print('exceded API request limit; {}'.format(json_response))
 		else:
-			raise RuntimeError('{}'.format(json_response))
+			print('{}'.format(json_response))
+
+		sys.exit()
 	
 	def get_relevant_info(self, json_response):
 		info = OrderedDict()

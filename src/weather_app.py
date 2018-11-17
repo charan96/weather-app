@@ -3,7 +3,7 @@ import requests
 import tabulate
 from collections import OrderedDict
 
-from url_constructor import URLConstructor
+from .url_constructor import URLConstructor
 
 
 class WeatherApp:

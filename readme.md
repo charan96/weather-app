@@ -9,16 +9,11 @@ Simple command-line weather application to find the basic weather info such as t
 I have a config.json file (not included) located in the repo that contains a `apikey` which is the key required to grab the data from the OWM API. If you'd like to run this application, sign up to get the API key from here: [https://openweathermap.org/appid]
 
 The output looks like this:
------------  --------
-Location     New York
------------  --------
-Condition    Clear
------------  --------
-Temperature  38.2 F
------------  --------
-Wind         9.2 mph
------------  --------
-Humidity     72%
------------  --------
-Cloudiness   1%
------------  --------
+
+| -----------|--------
+| Location   |New York
+| Condition  | Clear
+| Temperature|38.2 F
+| Wind       |9.2 mph
+| Humidity   |72%
+| Cloudiness |1%
